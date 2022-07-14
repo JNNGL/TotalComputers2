@@ -1,0 +1,37 @@
+name: TotalComputers2
+version: 1.0-SNAPSHOT
+description: Computers in vanilla Minecraft
+author: JNNGL
+website: https://jnngl.com/totalcomputers
+main: com.jnngl.totalcomputers2.Plugin
+load: POSTWORLD
+
+commands:
+  totalcomputers2:
+    description: Command for TotalComputers2 plugin.
+    usage: /totalcomputers2 [...]
+    aliases:
+      - tcomputers2
+      - tcmp2
+permissions:
+  totalcomputers2.plugin.manage:
+    description: Players with this permission can change/reload plugin configuration.
+    default: op
+  totalcomputers2.command.totalcomputers:
+    description: Allow access to the /totalcomputers2 command.
+    default: true
+  totalcomputers2.manage.all:
+    description: Players with this permission can create/remove computers without any restrictions.
+    default: op
+  totalcomputers2.manage.crafted:
+    description: Players with this permission can manage their computers. Overrides `totalcomputers2.selection` permission.
+    default: true
+  totalcomputers2.selection:
+    description: Players with this permission can select area.
+    default: true
+  totalcomputers2.use:
+    description: Players with this permission can use computers.
+    default: true
+  totalcomputers2.admin:
+    description: Players with this permission can use computers as administrator.
+    default: op
